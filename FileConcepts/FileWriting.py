@@ -1,0 +1,18 @@
+def FileWritingFunction(myTextFile,regNo,name,gender,department,cgpa,email,contact):
+	delimiter = ','
+	fileAppendObject = open(myTextFile,'a')
+	fileAppendObject.write(str(regNo))
+	fileAppendObject.write(delimiter)
+	fileAppendObject.write(name)
+	fileAppendObject.write(delimiter)
+	fileAppendObject.write(gender)
+	fileAppendObject.write(delimiter)
+	fileAppendObject.write(department)
+	fileAppendObject.write(delimiter)
+	fileAppendObject.write(str(cgpa))
+	fileAppendObject.write(delimiter)
+	fileAppendObject.write(email)
+	fileAppendObject.write(delimiter)
+	fileAppendObject.write(str(contact))
+	fileAppendObject.write('\n')
+	fileAppendObject.close()
